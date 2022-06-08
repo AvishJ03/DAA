@@ -29,6 +29,7 @@ int main()
     cout << "Enter denominations: ";
     for (int i = 0; i < n; i++)
         cin >> coins[i];
+    sort(coins, coins + n);
     int x[n] = {0};
     int money;
     cout << "Enter the amount: ";
@@ -37,7 +38,7 @@ int main()
     int total = change(coins, x, n, money);
     cout << total << endl;
     for (int i = 0; i < n; i++)
-        cout << x[i] << " ";
+        cout << coins[i] << " - " << x[i] <<endl;
 
     return 0;
 }
