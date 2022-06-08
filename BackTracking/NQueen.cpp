@@ -36,11 +36,9 @@ void NQueen(int **arr, int x, int n)
         {
             string soln = "";
             for (int i = 0; i < n; i++)
-            {
                 for (int j = 0; j < n; j++)
                     if (arr[i][j] == 1)
                         soln = soln + to_string(j + 1);
-            }
             cout << soln << endl;
             break;
         }

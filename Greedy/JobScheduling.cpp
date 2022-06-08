@@ -20,9 +20,7 @@ int scheduling(int *p, int *d, int *x, int n, int k)
         int i = maxi(p, n);
         int dl = d[i];
         while (x[dl - 1] != 0 && dl > 0)
-        {
             dl--;
-        }
         if (dl)
         {
             x[dl - 1] = i + 1;

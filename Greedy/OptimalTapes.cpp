@@ -6,10 +6,8 @@ int mini(int *array, int n)
     int index = 0;
 
     for (int i = 1; i < n; i++)
-    {
         if (array[i] < array[index])
             index = i;
-    }
 
     return index;
 }

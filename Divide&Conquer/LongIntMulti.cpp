@@ -5,9 +5,7 @@ int base(long long number)
 {
     int n = 10;
     while (n < number)
-    {
         n = n * 10;
-    }
     return n / 10;
 }
 
@@ -15,9 +13,7 @@ int max(long long number, int b)
 {
     int m = 1;
     while (m * b < number)
-    {
         m++;
-    }
     return m--;
 }
 
@@ -30,9 +26,7 @@ long long rest(long long number, int b, int m)
 long long karatsuba(long long n1, long long n2)
 {
     if (n1 < 10 || n2 < 10)
-    {
         return n1 * n2;
-    }
     long long z0, z1, z2;
     int z2_1, z2_2;
     int b1, b2;
@@ -40,13 +34,9 @@ long long karatsuba(long long n1, long long n2)
     b1 = base(n1);
     b2 = base(n2);
     if (b1 > b2)
-    {
         b1 = b2;
-    }
     else
-    {
         b2 = b1;
-    }
     z2_1 = max(n1, b1);
     z2_2 = max(n2, b2);
     z2 = karatsuba(z2_1, z2_2);

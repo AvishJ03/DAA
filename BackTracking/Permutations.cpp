@@ -7,14 +7,12 @@ void permute(char *a, int i, int n)
     if (i == n)
         cout << a << endl;
     else
-    {
         for (j = i; j < n; j++)
         {
             swap(a[i], a[j]);
             permute(a, i + 1, n);
             swap(a[i], a[j]);
         }
-    }
 }
 
 int main()

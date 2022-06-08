@@ -7,9 +7,7 @@ int change(int *coins, int *x, int n, int money)
     while (money > 0)
     {
         if (money < coins[i])
-        {
             i--;
-        }
         else
         {
             money = money - coins[i];

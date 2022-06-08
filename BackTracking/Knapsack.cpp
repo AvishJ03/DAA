@@ -9,7 +9,6 @@ struct knaps
     vector<int> fp;
 };
 
-// void knapsack(int *w, int *p, int *soln, int i, int n, int m, int tw, int tp)
 void knapsack(struct knaps *k, int i, int tw, int tp)
 {
     if (tw + k->w[i] <= k->m || tw == k->m)
